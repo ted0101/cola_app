@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cola</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= link_to "Algorithm1", count1_path %>
+<%= link_to "Algorithm2", count2_path %>
+<%= link_to "Algorithm3", count3_path %>
+<%= link_to "Algorithm4", count4_path %>
+<%= yield %>
+
+</body>
+</html>

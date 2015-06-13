@@ -1,0 +1,6 @@
+<h2>Cola</h2>
+<%= select_tag(:date, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
+<%=submit_tag"搜尋"%>
+<%if params[:date].present?%>
+<%= render 'form' %>
+<%end%>
